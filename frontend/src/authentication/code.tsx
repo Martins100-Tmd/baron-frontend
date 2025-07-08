@@ -3,7 +3,7 @@ import { bdm } from "..";
 
 export default function VerifyCode() {
   const [otp, setOtp] = useState(Array(6).fill(""));
-  const inputsRef: any = useRef<any>([]);
+  const inputsRef: any = useRef<HTMLInputElement[] | null[]>([]);
 
   const handlePaste = (e: any) => {
     e.preventDefault();
