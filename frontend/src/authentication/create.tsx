@@ -7,7 +7,7 @@ export default function UserCreateAccount() {
   return (
     <section className="w-1/2 mx-auto rounded-sm flex flex-col items-center gap-2">
       <div className="flex flex-row items-center gap-1">
-        <img src={bdm} className="sm:w-20 sm:h-20 rounded object-cover" />
+        <img src={bdm} className="sm:w- rounded object-cover" />
         <div className="flex flex-col items-start">
           <p className="font-all font-semibold text-2xl">Baron</p>
           <p className="font-all text-sm text-start">DeMusical</p>
@@ -21,7 +21,7 @@ export default function UserCreateAccount() {
           <p className="font-medium text-sm text-start font-all">Full Name</p>
           <input
             type="text"
-            className="rounded-sm shadow outline-0 font-all border text-sm border-black/20 p-2"
+            className="rounded-sm shadow outline-0 font-all border text-sm border-stone-700 p-2"
             placeholder="e.g John Doe..."
           />
         </div>
@@ -29,7 +29,7 @@ export default function UserCreateAccount() {
           <p className="font-medium text-sm text-start font-all">Full Email</p>
           <input
             type="text"
-            className="rounded-sm shadow outline-0 border font-all text-sm border-black/20 p-2"
+            className="rounded-sm shadow outline-0 border font-all text-sm border-stone-700 p-2"
             placeholder="e.g johndoe@xyz.com"
           />
         </div>
@@ -37,7 +37,7 @@ export default function UserCreateAccount() {
           <p className="font-medium text-sm text-start font-all">
             Full Password
           </p>
-          <div className="flex flex-row items-center w-full border text-sm border-black/20 rounded-sm shadow">
+          <div className="flex flex-row items-center w-full border text-sm border-stone-700 rounded-sm shadow">
             <input
               type={viewPassword ? "text" : "password"}
               className="w-full outline-0 p-2 font-all"
@@ -109,6 +109,10 @@ export default function UserCreateAccount() {
         onSuccess={() => console.log("success")}
         onError={() => console.log("error")}
       />
+      <div className="flex flex-row items-center self-start my-2 gap-2 justify-between sm:w-2/5 mx-0 w-4/5">
+        <p className="font-all text-xs">Privacy policy</p>
+        <p className="font-all text-xs">Terms of use</p>
+      </div>
     </section>
   );
 }
