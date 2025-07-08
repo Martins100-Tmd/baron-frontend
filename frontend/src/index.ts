@@ -1,7 +1,7 @@
 //========= IMAGE ===========
 import bdm from "./assets/bdm.png";
-
-export { bdm };
+import headlogo from "./assets/headlogo.png";
+export { bdm, headlogo };
 
 // ============= Authentication Components ==========
 import UserCreateAccount from "./authentication/create";
